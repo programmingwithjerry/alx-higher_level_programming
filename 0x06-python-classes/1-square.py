@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Square by private"""
+
+
 class Square:
     """ The Square class."""
     def __init__(self, size):
