@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This module contains the definition of a class named Square."""
+"""Defines a class Square by private"""
 class Square:
     """ The Square class."""
     def __init__(self, size):
