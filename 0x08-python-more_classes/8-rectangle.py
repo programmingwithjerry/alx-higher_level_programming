@@ -46,27 +46,33 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Calculate the area of the rectangle."""
         return self.__width * self.__height
 
     def perimeter(self):
+        """Calculate the perimeter of the rectangle."""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        """Prints the rectangle with the character # ."""
         if self.__width == 0 or self.__height == 0:
             return ""
         return "\n".join([str(self.print_symbol) * self.__width] * self.__height)
 
     def __repr__(self):
+        """Returns a string representation of the rectangle."""
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
+        """Deletes an instance of a class"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """Computes the area of two rectangles and compares them."""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
