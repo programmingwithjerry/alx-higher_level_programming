@@ -3,7 +3,8 @@
 
 
 class Rectangle:
-    """Class that defines properties of rectangle by: (based on 6-rectangle.py).
+    """
+    Class that defines properties of rectangle by: (based on 6-rectangle.py).
     """
     number_of_instances = 0
     print_symbol = "#"
