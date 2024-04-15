@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 """A module with just one class - Rectangle
   that inherits from BaseGeometry (7-base_geometry.py)."""
 
