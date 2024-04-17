@@ -12,21 +12,28 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=None):
-        """Retrieves a dictionary representation of a
-           Student instance (same as 8-class_to_json.py)
-        """
-        if attrs is not None:
-            if hasattr(attrs, '__iter__') and all(isinstance(attr, str) for attr in attrs):
-                return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-            else:
-                return self.__dict__
-        else:
-            return self.__dict__
+   def to_json(self, attrs=None):
+    """Get a dictionary representation of the Student.
+
+    If attrs is a list of strings, represents only those attributes
+    included in the list.
+
+    Args:
+        attrs (list): (Optional) The attributes to represent.
+    """
+    if type(attrs) == list and all(type(attr) == str for attr in attrs):
+        json_dict = {}
+        for attr in attrs:
+            if hasattr(self, attr):
+                json_dict[attr] = getattr(self, attr)
+        return json_dict
+    return self.__dict__
+ 
 
     def reload_from_json(self, json):
         """Replaces all attributes of the Student
         """
         for k, v in json.items():
             setattr(self, k, v)
+
 
