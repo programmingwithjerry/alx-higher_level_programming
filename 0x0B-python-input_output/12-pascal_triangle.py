@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines a Pascal's Triangle function"""
 
-def generate_pascals_triangle(n):
+def pascal_triangle(n):
     """returns a list of lists of integers
        representing the Pascal’s triangle of n.
     """
