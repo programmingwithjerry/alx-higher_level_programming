@@ -1,7 +1,9 @@
--- Select the genre and count the number of shows using table aliases
-SELECT g.name AS genre, COUNT(sg.show_id) AS number_of_shows
+-- Select distinct genre names using table aliases
+SELECT DISTINCT g.name
 FROM tv_genres AS g
 INNER JOIN tv_show_genres AS sg
 ON g.id = sg.genre_id
-GROUP BY sg.genre_id
-ORDER BY number_of_shows DESC;
+INNER JOIN tv_shows AS s
+ON sg.show_id = s.id
+WHERE s.title = 'Dexter'
+ORDER BY g.name ASC;
