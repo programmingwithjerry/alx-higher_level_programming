@@ -1,4 +1,5 @@
--- Select the genre and count the number of shows using a subquery in the SELECT clause
+-- Select the genre and count the number of shows using
+-- a subquery in the SELECT clause
 SELECT g.name AS genre, 
        (SELECT COUNT(show_id) 
         FROM tv_show_genres 
