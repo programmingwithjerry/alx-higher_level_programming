@@ -2,12 +2,9 @@
 USE hbtn_0d_usa;
 
 -- Select all columns from `cities` where the state name is 'California'
--- Use a CTE to simplify the query
-WITH cali_state AS (
-    SELECT id FROM states WHERE name = 'California'
-)
-SELECT *
+-- Join `cities` with `states` on `state_id` and `id`
+SELECT cities.*
 FROM cities
-WHERE state_id = (SELECT id FROM cali_state)
-ORDER BY id ASC;
-
+JOIN states ON cities.state_id = states.id
+WHERE states.name = 'California'
+ORDER BY cities.id ASC;
