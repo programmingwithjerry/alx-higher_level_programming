@@ -2,7 +2,6 @@
 """A Script that takes in the name of a state as an argument and
    lists all cities of that state, using the database hbtn_0e_4_usa
 """
-
 from sys import argv
 import MySQLdb
 
@@ -20,11 +19,11 @@ if __name__ == "__main__":
     cursor = conn.cursor()
 
     sql_query = """
-    SELECT cities.name
-    FROM cities
-    JOIN states ON cities.state_id = states.id
-    WHERE states.name = %s
-    ORDER BY cities.id ASC;
+        SELECT cities.name
+        FROM cities
+        JOIN states ON cities.state_id = states.id
+        WHERE states.name = %s
+        ORDER BY cities.id ASC;
     """
 
     cursor.execute(sql_query, (target_state,))
