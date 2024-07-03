@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// This line indicates that the script should be run using the Node.js interpreter
+// This line indicates that the script should be
+// run using the Node.js interpreter
 
 // Export the callMeMoby function as a module
 exports.callMeMoby = function (x, theFunction) {
