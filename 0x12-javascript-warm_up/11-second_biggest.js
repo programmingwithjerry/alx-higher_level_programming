@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-if (process.argv.length < 5) {
+if (process.argv.length < 4) {
   console.log('0');
 } else {
   const size = process.argv.length;
