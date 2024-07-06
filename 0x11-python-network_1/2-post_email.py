@@ -36,6 +36,7 @@ def send_post_request(url, email):
         # Print the response body
         print(body)
 
+
 # Main entry point of the script
 if __name__ == "__main__":
     # The URL and email to be used in the POST request
