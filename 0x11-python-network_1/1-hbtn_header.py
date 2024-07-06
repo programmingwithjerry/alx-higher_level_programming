@@ -8,6 +8,7 @@ Usage: ./1-hbtn_header.py <URL>
 import urllib.request
 import sys
 
+
 def fetch_x_request_id(url):
     """
     Fetches the URL and prints the value of the X-Request-Id header.
