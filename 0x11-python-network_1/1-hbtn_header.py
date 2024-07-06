@@ -26,6 +26,7 @@ def fetch_x_request_id(url):
         # Print the value of the 'X-Request-Id' header
         print(x_request_id)
 
+
 # Main entry point of the script
 if __name__ == "__main__":
     # The URL to be fetched is passed as the first command line argument
@@ -33,4 +34,3 @@ if __name__ == "__main__":
     
     # Call the function to fetch and print the 'X-Request-Id'
     fetch_x_request_id(url)
-
