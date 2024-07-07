@@ -24,7 +24,7 @@ def fetch_x_request_id(url):
         x_request_id = headers.get('X-Request-Id')
         # Print the value of the 'X-Request-Id' header
         print(x_request_id)
-        
+
 # Main entry point of the script
 if __name__ == "__main__":
     # The URL to be fetched is passed as the first command line argument
