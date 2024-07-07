@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 // Define a class Rectangle
 module.exports = class Rectangle {
   // Constructor that takes two arguments: w (width) and h (height)
