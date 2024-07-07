@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Python script that takes in a URL, sends a request to the URL, and displays
+Python script that takes in a URL, sends a request to the URL,
+and displays
 the value of the X-Request-Id variable found in the response header.
 """
 import requests
@@ -8,7 +9,9 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    # The URL to be fetched is passed as the first command line argument
+    """The URL to be fetched is passed as the first
+       command line argument
+    """
     url = argv[1]
 
     try:
