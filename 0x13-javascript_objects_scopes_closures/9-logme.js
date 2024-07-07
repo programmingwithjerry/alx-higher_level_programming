@@ -1,5 +1,5 @@
 #!/usr/bin/node
-exports.logMe = function(item) {
+exports.logMe = function (item) {
   // Initialize a static variable to keep track of the number of arguments printed
   if (!exports.logMe.counter) {
     exports.logMe.counter = 0;
