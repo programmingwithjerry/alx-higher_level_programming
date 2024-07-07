@@ -17,7 +17,7 @@ if __name__ == "__main__":
     try:
         # Send a GET request to the provided URL
         response = requests.get(url)
-        
+
         # Print the value of the 'X-Request-Id' header if it exists
         print(response.headers['X-Request-Id'])
     except KeyError:
