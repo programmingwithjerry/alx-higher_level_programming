@@ -11,7 +11,7 @@ exports.esrever = function (list) {
   // Swap elements from start to end
   while (start < end) {
     // Swap elements at start and end indices
-    let temp = list[start];
+    const temp = list[start];
     list[start] = list[end];
     list[end] = temp;
 
