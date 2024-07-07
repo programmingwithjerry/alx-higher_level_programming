@@ -14,7 +14,8 @@ import sys
 
 def send_post_request(url, email):
     """
-    Sends a POST request to the passed URL with the email as a parameter
+    Sends a POST request to the passed URL with the email
+    as a parameter
     and prints the body of the response decoded in utf-8.
 
     Args:
@@ -44,5 +45,6 @@ if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
 
-    # Call the function to send the POST request and print the response
+    # Call the function to send the POST request
+    #and print the response
     send_post_request(url, email)
