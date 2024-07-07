@@ -1,26 +1,17 @@
 #!/usr/bin/node
-exports.esrever = function(list) {
-  // Check if list is valid and is an array
-  if (!Array.isArray(list)) {
-    throw new Error('Input is not an array');
+exports.nbOccurences = function(list, searchElement) {
+  // Initialize a counter to store the number of occurrences
+  let count = 0;
+
+  // Iterate through the list
+  for (let i = 0; i < list.length; i++) {
+    // Check if the current element is equal to the searchElement
+    if (list[i] === searchElement) {
+      // Increment the counter if they match
+      count++;
+    }
   }
-  
-  // Initialize variables for reversing the list
-  let start = 0;
-  let end = list.length - 1;
-  
-  // Swap elements from start to end
-  while (start < end) {
-    // Swap elements at start and end indices
-    let temp = list[start];
-    list[start] = list[end];
-    list[end] = temp;
-    
-    // Move start and end indices towards each other
-    start++;
-    end--;
-  }
-  
-  // Return the reversed list
-  return list;
+
+  // Return the total count of occurrences
+  return count;
 };
