@@ -10,6 +10,7 @@ The response is displayed in the following format:
 """
 import requests
 
+
 def fetch_status(url):
     """
     Fetches the URL and prints the body of the response.
@@ -24,8 +25,8 @@ def fetch_status(url):
     print("\t- type:", type(body))
     print("\t- content:", body)
 
+
 # Main entry point of the script
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
     fetch_status(url)
-
